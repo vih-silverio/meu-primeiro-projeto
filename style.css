@@ -1,0 +1,166 @@
+/* ======== RESET ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  color: #4a003c;
+  background: linear-gradient(135deg, #ffe6f2, #ffcce0, #ffd6f0);
+  padding-top: 90px; /* espaço para o menu fixo */
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+.cabecalho {
+  text-align: center;
+  background: linear-gradient(90deg, #ff66b2, #ff99cc);
+  color: white;
+  padding: 25px 10px;
+  border-bottom: 4px solid #ff4da6;
+  box-shadow: 0 4px 10px rgba(255, 105, 180, 0.4);
+}
+
+.cabecalho h1::before {
+  content: "🎨 ";
+}
+.cabecalho h1::after {
+  content: " 💕";
+}
+
+.cabecalho h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 2rem;
+}
+
+/* ======== MENU ======== */
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ff99cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(255, 20, 147, 0.4);
+  border-bottom: 2px solid #ff4da6;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: 0.3s;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background: white;
+  color: #ff4da6;
+  transform: scale(1.1);
+}
+
+/* ======== TÍTULOS ======== */
+h2 {
+  color: #ff4da6;
+  text-align: center;
+  margin: 40px 0 20px;
+  font-size: 1.8rem;
+  position: relative;
+}
+
+h2::before {
+  content: "💗 ";
+}
+
+h2::after {
+  content: " 💫";
+}
+
+/* ======== SEÇÕES ======== */
+section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0 4px 15px rgba(255, 105, 180, 0.2);
+  border: 2px solid #ffcce0;
+}
+
+section p {
+  margin-bottom: 15px;
+  text-align: justify;
+  font-size: 1.05rem;
+}
+
+/* ======== DECORAÇÕES ======== */
+section::before {
+  content: "🖌️✨";
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  text-align: center;
+  background: linear-gradient(90deg, #ff66b2, #ff99cc);
+  padding: 20px;
+  color: white;
+  font-size: 0.95rem;
+  border-top: 3px solid #ff4da6;
+  box-shadow: 0 -2px 8px rgba(255, 105, 180, 0.3);
+}
+
+footer strong {
+  color: #ffe6f2;
+}
+
+footer::before {
+  content: "🌸 ";
+}
+
+/* ======== ANIMAÇÕES ======== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section, h2, p {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* ======== RESPONSIVIDADE ======== */
+@media (max-width: 768px) {
+  .menu {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  .menu a {
+    font-size: 0.9rem;
+  }
+}
