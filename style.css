@@ -8,15 +8,15 @@
 /* Corpo da página */
 body {
     font-family: 'Georgia', serif;
-    background-color: #f4f1e1; /* cor suave vintage */
-    color: #3d3d3d; /* cor escura para o texto */
+    background-color: #f8c1e6; /* cor suave e feminina de fundo (rosa claro) */
+    color: #4a3f37; /* cor escura e suave para o texto */
     line-height: 1.6;
     padding: 20px;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #bfa46f; 
+    background-color: #ff81c8; /* rosa suave para o cabeçalho */
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -37,7 +37,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #3d3d3d;
+    color: #4a3f37; /* cor escura e suave para os links */
     margin: 0 15px;
     font-size: 1.2em;
     font-weight: bold;
@@ -46,20 +46,20 @@ body {
 }
 
 .menu a:hover {
-    color: #bfa46f; /* cor do menu ao passar o mouse */
+    color: #f7b3d9; /* rosa suave ao passar o mouse */
 }
 
 /* Estilo para as seções principais */
 h2 {
     font-size: 1.8em;
-    color: #5d4037; /* marrom suave */
+    color: #d47eab; /* tom de rosa/magenta suave */
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
 }
 
 p {
     font-size: 1.1em;
-    color: #5d4037;
+    color: #4a3f37; 
     margin-bottom: 20px;
     line-height: 1.8;
 }
@@ -67,7 +67,7 @@ p {
 /* Estilo para o texto em negrito */
 strong {
     font-weight: bold;
-    color: #bfa46f; /* cor vintage para o texto em negrito */
+    color: #080005; 
 }
 
 /* Rodapé */
@@ -75,7 +75,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     font-size: 0.9em;
-    color: #bfa46f;
+    color: #ff0090; /* rosa suave para o rodapé */
 }
 
 /* Responsividade */
