@@ -1,140 +1,95 @@
-/* ====== ESTILO GERAL ====== */
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(270deg, #7a00ff, #b56bff, #e3b0ff);
-  background-size: 600% 600%;
-  animation: fundoAnimado 12s ease infinite;
-  color: white;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+    font-family: 'Georgia', serif;
+    background-color: #f4f1e1; /* cor suave vintage */
+    color: #3d3d3d; /* cor escura para o texto */
+    line-height: 1.6;
+    padding: 20px;
 }
 
-/* Animação suave no fundo */
-@keyframes fundoAnimado {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* ====== CABEÇALHO ====== */
+/* Cabeçalho */
 .cabecalho {
-  text-align: center;
-  padding: 40px 0;
-  background-color: rgba(50, 0, 90, 0.6);
-  border-bottom: 4px solid #d98cff;
-  position: relative;
+    background-color: #bfa46f; 
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .cabecalho h1 {
-  font-size: 3em;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #fff;
-  text-shadow: 0px 0px 10px #c69aff;
+    color: #fff;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
-/* Emoji decorativo flutuante 🎨 */
-.cabecalho::after {
-  content: "🎨✨🖌️";
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  animation: flutuar 3s ease-in-out infinite alternate;
-}
-
-@keyframes flutuar {
-  0% { transform: translate(-50%, 0); }
-  100% { transform: translate(-50%, -10px); }
-}
-
-/* ====== MENU ====== */
+/* Menu de navegação */
 .menu {
-  display: flex;
-  justify-content: center;
-  gap: 25px;
-  padding: 15px;
-  background-color: rgba(120, 0, 180, 0.7);
-  border-bottom: 3px solid #fff;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .menu a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  transition: all 0.3s ease;
-  padding: 8px 12px;
-  border-radius: 10px;
+    text-decoration: none;
+    color: #3d3d3d;
+    margin: 0 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
 }
 
 .menu a:hover {
-  background-color: #e3b0ff;
-  color: #3a0057;
-  transform: scale(1.1);
+    color: #bfa46f; /* cor do menu ao passar o mouse */
 }
 
-/* ====== CONTEÚDO ====== */
+/* Estilo para as seções principais */
 h2 {
-  text-align: center;
-  color: #fff;
-  margin-top: 40px;
-  text-shadow: 0 0 10px #c69aff;
+    font-size: 1.8em;
+    color: #5d4037; /* marrom suave */
+    margin-bottom: 15px;
+    font-family: 'Georgia', serif;
 }
 
 p {
-  max-width: 900px;
-  margin: 20px auto;
-  line-height: 1.7;
-  text-align: justify;
-  font-size: 1.1em;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 15px 25px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    font-size: 1.1em;
+    color: #5d4037;
+    margin-bottom: 20px;
+    line-height: 1.8;
 }
 
-/* ====== FIGURINHAS INTERATIVAS ====== */
-p::before {
-  content: "💡 ";
-  font-size: 1.3em;
-}
-
-p:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  transform: scale(1.02);
-  transition: 0.3s;
-}
-
-/* ====== RODAPÉ ====== */
+/* Estilo para o texto em negrito */
 strong {
-  display: block;
-  text-align: center;
-  margin: 30px 0;
-  font-size: 1em;
-  color: #fff;
-  text-shadow: 0 0 10px #b56bff;
-  animation: brilho 2s infinite alternate;
+    font-weight: bold;
+    color: #bfa46f; /* cor vintage para o texto em negrito */
 }
 
-@keyframes brilho {
-  0% { text-shadow: 0 0 10px #b56bff; }
-  100% { text-shadow: 0 0 25px #fff; }
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #bfa46f;
 }
 
-/* ====== EFEITOS DECORATIVOS ====== */
-/* Estrelas flutuantes ✨ */
-body::before {
-  content: "✨✨✨✨✨";
-  position: fixed;
-  top: 10px;
-  right: 15px;
-  animation: piscar 3s infinite alternate;
-  font-size: 1.2em;
-}
+/* Responsividade */
+@media (max-width: 768px) {
+    .cabecalho h1 {
+        font-size: 2em;
+    }
 
-@keyframes piscar {
-  0% { opacity: 0.3; }
-  100% { opacity: 1; }
+    .menu a {
+        font-size: 1em;
+        margin: 0 10px;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
 }
