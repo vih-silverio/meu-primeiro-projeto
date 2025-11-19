@@ -102,3 +102,24 @@ a {
     text-transform: uppercase;
     transition: color 0.3s ease;
 }
+
+/* Estilo para o conteúdo principal e listas (páginas como curiosidades) */
+.conteudo {
+    padding: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.conteudo .lista-curiosidades {
+    list-style: disc;
+    margin-left: 1.6em;
+    color: #4a3f37;
+    font-size: 1.1em;
+    line-height: 1.8;
+    font-family: inherit;
+    margin-bottom: 20px;
+}
+
+.conteudo .lista-curiosidades li {
+    margin-bottom: 12px;
+}
