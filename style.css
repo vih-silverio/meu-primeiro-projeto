@@ -1,4 +1,4 @@
-/* Resetando margens e preenchimentos */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,15 +8,15 @@
 /* Corpo da página */
 body {
     font-family: 'Georgia', serif;
-    background-color: #f8c1e6; /* cor suave e feminina de fundo (rosa claro) */
-    color: #4a3f37; /* cor escura e suave para o texto */
+    background-color: #f8c1e6;
+    color: #4a3f37; 
     line-height: 1.6;
     padding: 20px;
 }
 
 /* Cabeçalho */
 .cabecalho {
-    background-color: #ff81c8; /* rosa suave para o cabeçalho */
+    background-color: #ff81c8;
     padding: 20px;
     text-align: center;
     margin-bottom: 20px;
@@ -37,7 +37,7 @@ body {
 
 .menu a {
     text-decoration: none;
-    color: #4a3f37; /* cor escura e suave para os links */
+    color: #4a3f37;
     margin: 0 15px;
     font-size: 1.2em;
     font-weight: bold;
@@ -46,13 +46,13 @@ body {
 }
 
 .menu a:hover {
-    color: #f7b3d9; /* rosa suave ao passar o mouse */
+    color: #f7b3d9; 
 }
 
 /* Estilo para as seções principais */
 h2 {
     font-size: 1.8em;
-    color: #d47eab; /* tom de rosa/magenta suave */
+    color: #d47eab; 
     margin-bottom: 15px;
     font-family: 'Georgia', serif;
 }
@@ -75,7 +75,7 @@ footer {
     text-align: center;
     margin-top: 50px;
     font-size: 0.9em;
-    color: #ff0090; /* rosa suave para o rodapé */
+    color: #ff0090; 
 }
 
 /* Responsividade */
@@ -94,8 +94,9 @@ footer {
     }
 }
 a {
+     /* cor para os links */
       text-decoration: none;
-    color: #4a3f37; /* cor escura e suave para os links */
+    color: #4a3f37;
     margin: 0 15px;
     font-size: 1.2em;
     font-weight: bold;
@@ -103,7 +104,6 @@ a {
     transition: color 0.3s ease;
 }
 
-/* Estilo para o conteúdo principal e listas (páginas como curiosidades) */
 .conteudo {
     padding: 20px;
     max-width: 900px;
