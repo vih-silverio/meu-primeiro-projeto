@@ -1,132 +1,244 @@
-
+/* ===============================
+   RESET GLOBAL
+================================== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo da página */
+/* ===============================
+   BODY (pergaminho + textura)
+================================== */
 body {
-    font-family: 'Georgia', serif;
-    background-color: #f8c1e6;
-    color: #4a3f37; 
+    font-family: "Georgia", serif;
+    color: #f8e7df;
+
+    /* BACKGROUND PERGAMINHO */
+    background: 
+        url(data:image/jpeg;base64,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),
+        radial-gradient(#402026 1px, #2b0f13 1px);
+    background-size: cover, 6px 6px;
+    background-attachment: fixed;
+
     text-align: center;
-    line-height: 1.6;
-    padding: 20px;
+    line-height: 1.7;
+    padding: 30px;
+
+    /* brilho suave */
+    border-top: 6px solid #d4b16a;
 }
 
-/* Cabeçalho */
+/* ===============================
+   CABEÇALHO (dourado + medieval)
+================================== */
 .cabecalho {
-    background-color: #ff81c8;
-    padding: 20px;
-    text-align: center;
-    margin-bottom: 20px;
+    background: rgba(70, 20, 30, 0.65);
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+
+    /* moldura dourada */
+    border: 4px solid #d4b16a;
+    box-shadow: 0 0 20px #000;
+}
+
+/* Ornamento superior */
+.cabecalho::before {
+    content: "⚜";
+    display: block;
+    font-size: 3em;
+    color: #d4b16a;
+    margin-bottom: 10px;
 }
 
 .cabecalho h1 {
-    color: #fff;
-    font-size: 2.5em;
+    color: #f6e0d4;
+    font-size: 2.8em;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px #000;
+    display: inline-block;
+    padding: 8px 25px;
+    border-bottom: 3px solid #d4b16a;
 }
 
-/* Menu de navegação */
+/* Ornamento inferior */
+.cabecalho::after {
+    content: "❧";
+    display: block;
+    font-size: 2.2em;
+    color: #d4b16a;
+    margin-top: 10px;
+}
+
+/* ===============================
+   DIVISOR DECORATIVO
+================================== */
+.divisor {
+    width: 220px;
+    height: 4px;
+    background: linear-gradient(to right, transparent, #d4b16a, transparent);
+    margin: 25px auto;
+    border-radius: 4px;
+}
+
+/* ===============================
+   MENU (medieval + vinho)
+================================== */
 .menu {
-    text-align: center;
-    margin-bottom: 30px;
-    text-align: center;
+    margin-bottom: 40px;
 }
 
 .menu a {
-    text-decoration: none;
-    color: #4a3f37;
-    margin: 0 15px;
+    color: #f6dcd2;
     font-size: 1.2em;
     font-weight: bold;
     text-transform: uppercase;
-    transition: color 0.3s ease;
-    text-align: center;
+    margin: 0 18px;
+    padding: 8px 14px;
+    text-decoration: none;
+
+    /* decoração */
+    border-bottom: 2px solid transparent;
+    transition: 0.3s ease;
 }
 
 .menu a:hover {
-    color: #f7b3d9; 
+    border-bottom: 2px solid #d4b16a;
+    color: #d4b16a;
+    transform: scale(1.1);
 }
 
-/* Estilo para as seções principais */
+/* ===============================
+   TÍTULOS (floral + dourado)
+================================== */
 h2 {
-    font-size: 1.8em;
-    color: #d47eab; 
-    margin-bottom: 15px;
-    font-family: 'Georgia', serif;
+    font-size: 2em;
+    color: #f6e0d4;
+    margin: 30px 0 15px;
+    text-shadow: 0 0 8px #000;
+
+    position: relative;
+    display: inline-block;
 }
 
+/* ornamento floral dourado */
+h2::before, h2::after {
+    content: "❦";
+    color: #d4b16a;
+    font-size: 1.4em;
+    margin: 0 8px;
+}
+
+/* linha dourada */
+h2::after {
+    margin-left: 12px;
+}
+
+/* ===============================
+   PARÁGRAFOS
+================================== */
 p {
     font-size: 1.1em;
-    color: #4a3f37; 
+    color: #f4d9cf;
     margin-bottom: 20px;
-    line-height: 1.8;
-    text-align: center;
 }
 
-/* Estilo para o texto em negrito */
 strong {
-    font-weight: bold;
-    color: #080005; 
+    color: #ffe2c5;
+    text-shadow: 0 0 6px #000;
 }
 
-/* Rodapé */
+/* ===============================
+   CONTEÚDOS (cartões decorados)
+================================== */
+.conteudo-inicio,
+.conteudo-curiosidade,
+.text_sobre {
+    max-width: 900px;
+    margin: auto;
+    text-align: justify;
+    font-size: 85%;
+
+    background: rgba(50, 10, 20, 0.60);
+    padding: 30px;
+    border-radius: 14px;
+
+    /* borda lateral vinho */
+    border-left: 6px solid #d4b16a;
+    box-shadow: 0 0 20px #1a0000;
+}
+
+/* ===============================
+   BANNER (moldura real)
+================================== */
+.banner {
+    margin: 20px auto;
+    max-width: 1000px;
+}
+
+.banner img {
+    width: 100%;
+    height: 360px;
+    object-fit: cover;
+
+    border: 6px solid #d4b16a;
+    border-radius: 10px;
+    box-shadow: 0 0 25px #000000aa;
+}
+
+/* ===============================
+   RODAPÉ (dourado + medieval)
+================================== */
 footer {
-    text-align: center;
     margin-top: 50px;
-    font-size: 0.9em;
-    text-align: center;
-    color: #ff0090; 
+    padding: 30px;
+    font-size: 1em;
+    color: #f6dcd2;
+    background: rgba(70, 20, 30, 0.75);
+    border-radius: 12px;
+
+    border-top: 4px double #d4b16a;
+    box-shadow: 0 0 20px #000;
 }
 
-/* Responsividade */
+/* ornamento */
+footer::after {
+    content: "✦ ✧ ✦";
+    display: block;
+    margin-top: 10px;
+    color: #d4b16a;
+    font-size: 1.4em;
+}
+
+/* ===============================
+   LINKS GERAIS
+================================== */
+a {
+    color: #f6dcd2;
+    transition: 0.3s ease;
+}
+
+a:hover {
+    color: #d4b16a;
+    transform: scale(1.08);
+}
+
+/* ===============================
+   RESPONSIVIDADE
+================================== */
 @media (max-width: 768px) {
     .cabecalho h1 {
-        font-size: 2em;
-        text-align: center;
+        font-size: 1.8em;
     }
 
     .menu a {
-        font-size: 1em;
-        margin: 0 10px;
+        font-size: 0.9em;
+        margin: 0 6px;
     }
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.5em;
     }
-}
-a {
-     /* cor para os links */
-      text-decoration: none;
-    color: #4a3f37;
-    margin: 0 15px;
-    font-size: 1.2em;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s ease;
-}
-.conteudo-inicio{
-    max-width: 800px;   
-    text-align: justify;
-    margin: auto;
-    font-size: 78%;
-}
-
-.conteudo-curiosidade{
-    max-width: 1000px;   
-    text-align: justify;
-    margin: auto;
-    font-size: 78%;
-      padding: 50px;
-}
-
-
-  
-.conteudo-inicio p{
-    text-align: center;
 }
