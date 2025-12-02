@@ -1,4 +1,5 @@
 /* ===============================
+
    RESET GLOBAL
 ================================== */
 * {
@@ -8,7 +9,7 @@
 }
 
 /* ===============================
-   BODY (pergaminho + textura)
+   BODY (pergaminho + 
 ================================== */
 body {
     font-family: "Georgia", serif;
@@ -141,7 +142,7 @@ h2::after {
 ================================== */
 p {
     font-size: 1.1em;
-    color: #f4d9cf;
+    color: #553428;
     margin-bottom: 20px;
 }
 
