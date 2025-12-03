@@ -109,6 +109,17 @@ nav.menu {
     width: 80%;
 }
 
+/* ===== Menu ativo ===== */
+.menu a.active {
+    color: #d4b16a;
+    background: rgba(180, 120, 40, 0.95);
+    box-shadow: 0 0 18px #d4b16a88;
+    transform: scale(1.06);
+}
+.menu a.active::after {
+    width: 80%;
+}
+
 /* ===============================
    TÍTULOS SEÇÕES
 ================================== */
